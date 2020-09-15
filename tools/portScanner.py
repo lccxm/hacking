@@ -40,3 +40,6 @@ def banner(sckt, ip, port):
         return banner
     except:
         return 'Unknown'
+
+if __name__ == '__main__':
+        main()
