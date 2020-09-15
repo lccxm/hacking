@@ -16,7 +16,9 @@ def main():
 
 def scan(ip, ports):
     for c in ports:
-        child(ip, c)
+        t = Thread(target=child, args=(ip, c)) #thread para aumentar a velocidade do programa
+        t.start()
+        
 
 
 def child(ip, port):
