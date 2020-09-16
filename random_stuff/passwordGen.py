@@ -1,7 +1,8 @@
 import string, random
 
 def passGen(length):
-    characters = string.ascii_letters + string.digits
+    nice_string_punctuation = string.punctuation[2:5] + string.punctuation[-6] + string.punctuation[-11]
+    characters = string.ascii_letters + string.digits + nice_string_punctuation
     passwd = ""
     for c in range(length):
         passwd += random.choice(characters)
@@ -10,3 +11,5 @@ def passGen(length):
 
 length = input("Quantos digitos? ")
 passGen(length)
+
+
