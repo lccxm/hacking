@@ -11,5 +11,10 @@ def passGen(length):
 
 length = input("Quantos digitos? ")
 passGen(length)
+possibilidades = 67
+for i in range(1,length):
+    possibilidades = possibilidades * 67
+
+print("fun fact: o numero de senhas que esse programa pode gerar com {} digitos eh {} :)".format(length,possibilidades))
 
 
